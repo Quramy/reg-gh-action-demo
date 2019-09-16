@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Quramy/reg-gh-action-demo/issues"
   },
-  "homepage": "https://github.com/Quramy/reg-gh-action-demo#readme"
+  "homepage": "https://github.com/Quramy/reg-gh-action-demo#readme",
+  "devDependencies": {
+    "reg-keygen-git-hash-plugin": "^0.7.25",
+    "reg-notify-github-plugin": "^0.7.26",
+    "reg-publish-s3-plugin": "^0.7.25",
+    "reg-suit": "^0.7.26"
+  }
 }
