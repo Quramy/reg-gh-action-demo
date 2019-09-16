@@ -25,7 +25,7 @@ jobs:
     - name: workaround for detached HEAD
       run: |
         echo ${GITHUB_REF}
-        echo ${^GITHUB_REF/refs\/head\//}
+        echo $(echo $GITHUB_REF | sed "s/^refs\/head\///")
     - name: reg
       run: |
         yarn run reg-suit run
