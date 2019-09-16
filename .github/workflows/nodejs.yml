@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js v10
       uses: actions/setup-node@v1
       with:
         node-version: "10.x"
@@ -22,4 +22,6 @@ jobs:
         yarn install --pure-lockfile
       env:
         CI: true
-
+    - name: reg
+      run: |
+        yarn run reg-suit run
