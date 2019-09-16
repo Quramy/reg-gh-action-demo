@@ -22,6 +22,9 @@ jobs:
         yarn install --pure-lockfile
       env:
         CI: true
+    - name: workaround for detached HEAD
+      run: |
+        echo ${GITHUB_REF}
     - name: reg
       run: |
         yarn run reg-suit run
